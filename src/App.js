@@ -1,6 +1,20 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import axios from 'axios'
+import styled from 'styled-components'
+
+
+
 
 const App = () => {
+
+  const [people, setPeople] = useState('');
+
+  useEffect(() => {
+      axios.get(`https://swapi.dev/api/people/`)
+           .then ( res => console.log(res.data))
+           .catch( err => console.error(err))
+
+  }, [setPeople])
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
