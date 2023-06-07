@@ -72,7 +72,7 @@ After finishing your required elements, you can push your work further. These go
 
 ## Stretch Interview Questions
 
-1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
-1. Describe component state.
-1. Describe props.
-1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web. React is a library that allows access to the change DOM and detects changes and allows for elements on the page to be updated instead of refreshing the entire page
+1. Describe component state. A component is a section of code designed to do a specific thing and state is where data is stored.
+1. Describe props. Props are where state data is passed and they allow state to be sent between components 
+1. What are side effects, and how do you sync effects in a React component to changes of certain state or props? Side effects are unintended bugs in the code and to sync the effects you use the useEffect hook, so that react can control when and how by using a dependency array.

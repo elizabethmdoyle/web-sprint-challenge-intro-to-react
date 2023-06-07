@@ -1,30 +1,31 @@
 // Write your Character component here
-import React {useState, useEffect } from 'react'
+import React  from 'react'
+import axios from 'axios'
+import styled from 'styled-components'
+
 
 const Character = (props) => {
 
     
 return (
-    <div>Character
-        <p>birth year</p>
-        <p>created</p>
-        <p>edited</p>
-        <p>eye color</p>
-        <p>films</p>
-        <p>gender</p>
-        <p>hair color</p>
-        <p>height</p>
-        <p>homeworld</p>
-        <p>mass</p>
-        <p>name</p>
-        <p>skin color</p>
-        <p>species</p>
-        <p>starships</p>
-        <p>vehicles</p>
-        {
-
-        }
+    
+    <div>Character Name: {props.character.name}
+        <p>Birth year: {props.character.birth_year}</p>
+        <p>Created: {props.character.created}</p>
+        <p>Edited: {props.character.edited}</p>
+        <p>Eye color: {props.character.eye_color}</p>
+        <p>Films: {props.character.films}</p>
+        <p>Gender: {props.character.gender}</p>
+        <p>Hair color: {props.character.hair_color}</p>
+        <p>Height: {props.character.height}</p>
+        <p>Homeworld: {props.character.homeworld}</p>
+        <p>Mass: {props.character.mass}</p>
+        <p>Skin color: {props.character.skin_color}</p>
+        <p>Species: {props.character.species}</p>
+        <p>Starships: {props.character.starships}</p>
+        <p>Vehicles: {props.character.vehicles}</p>
         </div>
+        
 )
 
 }
