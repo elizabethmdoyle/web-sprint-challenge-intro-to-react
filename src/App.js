@@ -12,10 +12,27 @@ const App = () => {
 
   useEffect(() => {
       axios.get(`https://swapi.dev/api/people/`)
-           .then ( res => console.log(res.data))
-           .catch( err => console.error(err))
+           .then ( res => 
+            // const data = res.data
+            // console.log(res.data)
+
+            // data.map(() => {})
+
+           setPeople(res.data)
+           )
+           .catch( err => console.log(err))
 
   }, [setPeople])
+
+
+
+
+
+
+
+
+
+
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 

@@ -6,25 +6,52 @@ import styled from 'styled-components'
 
 const Character = (props) => {
 
+    console.log(props)
+
+    console.log(props.people)
     
+    props.people.map((people) => {
+        return console.log(people)
+    })
+
+
 return (
+
+
     
-    <div>Character Name: {props.character.name}
-        <p>Birth year: {props.character.birth_year}</p>
-        <p>Created: {props.character.created}</p>
-        <p>Edited: {props.character.edited}</p>
-        <p>Eye color: {props.character.eye_color}</p>
-        <p>Films: {props.character.films}</p>
-        <p>Gender: {props.character.gender}</p>
-        <p>Hair color: {props.character.hair_color}</p>
-        <p>Height: {props.character.height}</p>
-        <p>Homeworld: {props.character.homeworld}</p>
-        <p>Mass: {props.character.mass}</p>
-        <p>Skin color: {props.character.skin_color}</p>
-        <p>Species: {props.character.species}</p>
-        <p>Starships: {props.character.starships}</p>
-        <p>Vehicles: {props.character.vehicles}</p>
-        </div>
+    <div>
+        {
+
+    const name =  props.people.name.map(character => {
+
+        return (<div>Character: {character}</div>)
+   })
+    
+    
+    // props.people.map((people) => {
+
+    //              return console.log(people)
+    //         })
+        
+                    // <div>Character Name: {props.people.name}</div>
+                    // <p>Birth year: {props.people.birth_year}</p>
+                    // <p>Created: {props.people.created}</p>
+                    // <p>Edited: {props.people.edited}</p>
+                    // <p>Eye color: {props.people.eye_color}</p>
+                    // <p>Films: {props.people.films}</p>
+                    // <p>Gender: {props.people.gender}</p>
+                    // <p>Hair color: {props.people.hair_color}</p>
+                    // <p>Height: {props.people.height}</p>
+                    // <p>Homeworld: {props.people.homeworld}</p>
+                    // <p>Mass: {props.people.mass}</p>
+                    // <p>Skin color: {props.people.skin_color}</p>
+                    // <p>Species: {props.people.species}</p>
+                    // <p>Starships: {props.people.starships}</p>
+                    // <p>Vehicles: {props.people.vehicles}</p>
+
+
+        }
+</div>
         
 )
 
