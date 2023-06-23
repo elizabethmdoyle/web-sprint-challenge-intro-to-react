@@ -15,6 +15,7 @@ const Character = (props) => {
     })
 
 
+
 return (
 
 
@@ -22,7 +23,7 @@ return (
     <div>
         {
 
-    const name =  props.people.name.map(character => {
+     props.people.name.map(character => {
 
         return (<div>Character: {character}</div>)
    })
