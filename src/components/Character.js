@@ -3,36 +3,14 @@ import React  from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
 
-
 const Character = (props) => {
 
-    // console.log(props)
-
-    // console.log(props.people)
-    
-    // props.people.map((people) => {
-    //     return console.log(people)
-    // })
-
-
+   
 
 return (
 
 
     
-//     <div>
-//         {
-
-//      props.people.name.map(character => {
-
-//         return (<div>Character: {character}</div>)
-//    })
-    
-    
-    // props.people.map((people) => {
-
-    //              return console.log(people)
-    //         })
         <div>
                     <div>Character Name: {props.people.name}</div>
                     <p>Birth year: {props.people.birth_year}</p>
