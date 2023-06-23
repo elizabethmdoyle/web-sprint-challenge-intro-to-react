@@ -43,7 +43,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      <Character people={props}/>
+      <Character people={people}/>
     </div>
   );
 }
