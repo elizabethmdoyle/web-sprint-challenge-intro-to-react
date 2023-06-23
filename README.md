@@ -64,6 +64,7 @@ After finishing your required elements, you can push your work further. These go
 - [ ] Create a helper function in separate module to remove unneeded information from the API data, before putting it in state.
 - [ ] Create transitions or animations with styled-components.
 - [ ] Use Promise.all to resolve an array of promises.
+3
 
 ## Submission format
 
