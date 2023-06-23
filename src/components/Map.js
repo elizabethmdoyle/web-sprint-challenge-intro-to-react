@@ -1,30 +1,30 @@
-import React {useState, useEffect} from 'react';
+import React from 'react';
 
 import Character from './Character'
 
 const Map = (props) => {
 
 
-
+console.log(props)
 
 return (
     <div>
-        { Array.from(props.character).map((i, cb) => {
-              let personname = i[personname]
-              let birth_year = i[birth_year]
-              let created = i[created]
-              let edited = i[edited]
-              let eye_color = i[eye_color]
-              let films = i[films]
-              let gender = i[gender]
-              let hair_color = i[hair_color]
-              let height = i[height]
-              let homeworld = i[homeworld]
-              let mass = i[mass]
-              let skin_color = i[skin_color]
-              let species = i[species]
-              let starships = i[starships]
-              let vehicles = i[vehicles]
+        { Array.from(props.people).map((i, cb) => {
+              let personname = i['name'];
+              let birth_year = i['birth_year'];
+              let created = i['created'];
+              let edited = i['edited'];
+              let eye_color = i['eye_color'];
+              let films = i['films']
+              let gender = i['gender']
+              let hair_color = i['hair_color']
+              let height = i['height']
+              let homeworld = i['homeworld']
+              let mass = i['mass']
+              let skin_color = i['skin_color']
+              let species = i['species']
+              let starships = i['starships']
+              let vehicles = i['vehicles']
         
  
 
@@ -54,6 +54,7 @@ return <Character
 
 )
 }
+
 
 
 

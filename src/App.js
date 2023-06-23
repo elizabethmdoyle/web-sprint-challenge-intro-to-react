@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios'
 import styled from 'styled-components'
-import Character from "./components/Character"
+import Map from "./components/Map"
 
 
 
@@ -29,7 +29,8 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      <Character people={people}/>
+      <Map people={people}/>
+      
     </div>
   );
 }

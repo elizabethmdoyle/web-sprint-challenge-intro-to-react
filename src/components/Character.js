@@ -5,28 +5,27 @@ import styled from 'styled-components'
 
 const Character = (props) => {
 
-   
 
 return (
 
 
     
         <div>
-                    <div>Character Name: {props.people.name}</div>
-                    <p>Birth year: {props.people.birth_year}</p>
-                    <p>Created: {props.people.created}</p>
-                    <p>Edited: {props.people.edited}</p>
-                    <p>Eye color: {props.people.eye_color}</p>
-                    <p>Films: {props.people.films}</p>
-                    <p>Gender: {props.people.gender}</p>
-                    <p>Hair color: {props.people.hair_color}</p>
-                    <p>Height: {props.people.height}</p>
-                    <p>Homeworld: {props.people.homeworld}</p>
-                    <p>Mass: {props.people.mass}</p>
-                    <p>Skin color: {props.people.skin_color}</p>
-                    <p>Species: {props.people.species}</p>
-                    <p>Starships: {props.people.starships}</p>
-                    <p>Vehicles: {props.people.vehicles}</p>
+                    <div>Character Name: {props.name}</div>
+                    <p>Birth year: {props.birth_year}</p>
+                    <p>Created: {props.created}</p>
+                    <p>Edited: {props.edited}</p>
+                    <p>Eye color: {props.eye_color}</p>
+                    <p>Films: {props.films}</p>
+                    <p>Gender: {props.gender}</p>
+                    <p>Hair color: {props.hair_color}</p>
+                    <p>Height: {props.height}</p>
+                    <p>Homeworld: {props.homeworld}</p>
+                    <p>Mass: {props.mass}</p>
+                    <p>Skin color: {props.skin_color}</p>
+                    <p>Species: {props.species}</p>
+                    <p>Starships: {props.starships}</p>
+                    <p>Vehicles: {props.vehicles}</p>
 </div>
 
 )}
