@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components'
 
 import Character from './Character'
 
@@ -25,7 +26,7 @@ return (
               let species = i['species']
               let starships = i['starships']
               let vehicles = i['vehicles']
-        
+              let url = i['url']
  
 
 
@@ -45,7 +46,7 @@ return <Character
             species={species}
             starships={starships}
             vehicles={vehicles}
-
+            url={url}
 
 />;
 })}

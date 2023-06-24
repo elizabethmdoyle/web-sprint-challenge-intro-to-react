@@ -1,10 +1,16 @@
 // Write your Character component here
 import React  from 'react'
-import axios from 'axios'
 import styled from 'styled-components'
 
 const Character = (props) => {
 
+    // const Card = styled(Card)`
+    // max-width: 90%;
+    // align-items: center;
+    // margin: 0 auto;
+    // border: 3px solid black;
+    // color: black
+    // font-size:`
 
 return (
 
@@ -26,6 +32,8 @@ return (
                     <p>Species: {props.species}</p>
                     <p>Starships: {props.starships}</p>
                     <p>Vehicles: {props.vehicles}</p>
+                    <p>URL: {props.url}</p>
+
 </div>
 
 )}
