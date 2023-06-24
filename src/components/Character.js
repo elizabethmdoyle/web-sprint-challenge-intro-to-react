@@ -4,19 +4,20 @@ import styled from 'styled-components'
 
 const Character = (props) => {
 
-    // const Card = styled(Card)`
-    // max-width: 90%;
-    // align-items: center;
-    // margin: 0 auto;
-    // border: 3px solid black;
-    // color: black
-    // font-size:`
+    const Card = styled.div`
+    max-width: 60%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3rem;
+    border: 3px solid black;
+    color: black;
+    font-size: 2rem;`
 
 return (
 
 
     
-        <div>
+        <Card>
                     <div>Character Name: {props.name}</div>
                     <p>Birth year: {props.birth_year}</p>
                     <p>Created: {props.created}</p>
@@ -26,15 +27,15 @@ return (
                     <p>Gender: {props.gender}</p>
                     <p>Hair color: {props.hair_color}</p>
                     <p>Height: {props.height}</p>
-                    <p>Homeworld: {props.homeworld}</p>
+                    <p>Homeworld:</p><a href={props.homeworld}>{props.honeworld}</a>
                     <p>Mass: {props.mass}</p>
                     <p>Skin color: {props.skin_color}</p>
                     <p>Species: {props.species}</p>
-                    <p>Starships: {props.starships}</p>
-                    <p>Vehicles: {props.vehicles}</p>
-                    <p>URL: {props.url}</p>
+                    <p>Starships: </p><a href={props.starships}>{props.starships}</a>
+                    <p>Vehicles: </p><a href={props.vehicles}>{props.vehicles}</a>
+                    <p>URL:</p><a href={props.url}>{props.url}</a>
 
-</div>
+</Card>
 
 )}
 

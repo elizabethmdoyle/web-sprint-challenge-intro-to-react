@@ -11,12 +11,14 @@ console.log(props)
 return (
     <div>
         { Array.from(props.people).map((i, cb) => {
-              let personname = i['name'];
+              let name = i['name'];
               let birth_year = i['birth_year'];
               let created = i['created'];
               let edited = i['edited'];
               let eye_color = i['eye_color'];
-              let films = i['films']
+              let films = i['films'].map((film, cb) => {
+                return <p>{film}</p>
+              })
               let gender = i['gender']
               let hair_color = i['hair_color']
               let height = i['height']
@@ -24,14 +26,19 @@ return (
               let mass = i['mass']
               let skin_color = i['skin_color']
               let species = i['species']
-              let starships = i['starships']
-              let vehicles = i['vehicles']
+              let starships = i['starships'].map((ss, cb) => {
+                return <li>{ss}</li>
+              })
+              let vehicles = i['vehicles'].map((v, cb) => {
+                return <li>{v}</li>
+              })
               let url = i['url']
  
 
 
 return <Character 
-            key={personname}
+            key={name}
+            name={name}
             birth_year={birth_year}
             created={created}
             edited={edited}
